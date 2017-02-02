@@ -1,0 +1,271 @@
+.mainwrapper{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.menubar{
+  display: flex;
+  width: 85%;
+  height: 11vh;
+
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.woticon{
+  height: 36px;
+  width: 36px;
+  background: url('./img/wot-mark.svg');
+  background-size: cover;
+}
+
+.menuicon{
+  color: #6A787C;
+}
+
+.header{
+  position: relative;
+}
+
+.navcontainer{
+  display: none;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  background-color: blue;
+}
+
+.active{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.herocontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 40vh;
+
+  background: url('./img/wot-masthead-dark.jpg');
+  background-size: cover;
+}
+
+.title{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.maintitle{
+  font-size: 1.3rem;
+  font-weight: 100;
+
+}
+
+.workshop{
+  display: block;
+  font-size: 18vw;
+  line-height: 1.2;
+}
+
+.subtitlecontainer{
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle{
+  font-size: 1.2rem;
+  text-align:center;
+}
+
+.block{
+  display: block;
+}
+.orangetext{
+  color: #FF803A;
+}
+.greentext{
+  color: #BDD436;
+}
+
+.whitetext{
+  color: white;
+}
+
+.bold{
+  font-weight: bold;
+}
+.spacing{
+  letter-spacing: 1px;
+}
+
+
+.whitebox{
+  display: inline-block;
+  background-color: white;
+  height: 9px;
+  width: 10%;
+}
+
+.button{
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #BDD436;
+  height: 48px;
+  min-width: 330px;
+  max-width: 360px;
+  border-radius: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 18px;
+}
+
+.smokebg{
+  background-color: #F0F0F0;
+}
+
+.whitebg{
+  background-color: white;
+}
+
+.introcontainer{
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.introcontainer>p{
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.graytext{
+  color: #6A787C;
+}
+
+.bodytitle{
+  font-size: 2.5rem;
+}
+
+.learncontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reasoncontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  max-width: 380px;
+}
+
+.reasoncontainer .reasontext, .servicetitle, .answertext, .calltext{
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.arrowbox{
+  display: flex;
+
+  height: 70px;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrowbox .arrowtext{
+  font-size: 0.9rem;
+}
+
+.iconbox, .bigtext{
+  font-size: 2rem !important;
+}
+
+.questioncontainer{
+  box-sizing:border-box;
+  height: 30vh;
+  padding-top: 6vh;
+}
+
+.questioncontainer>p{
+  width: 310px;
+  margin: 3vh auto;
+}
+
+.servicecontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  height: 125vh;
+}
+
+.service{
+  display: inline-block;
+  width: 310px;
+  box-sizing: border-box;
+  padding: 30px 20px 30px 20px;
+}
+
+.bluetext{
+  color: #40666D;
+}
+
+.contactcontainer>a{
+  display: block;
+  width: 325px;
+}
+
+.contactcontainer{
+  padding-top: 5vh;
+  margin: 0 auto;
+}
+
+.worktitle{
+  height: 150px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.workphotocontainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgcontainer{
+  font-size: 0;
+}
+
+.workphoto{
+  width: 100%;
+}
+
+.emailcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  height: 244px;
+  align-content: space-around;
+}
+
+.bluebg{
+  background-color: #40666D;
+}
+
+.left{
+  text-align: left;
+}
