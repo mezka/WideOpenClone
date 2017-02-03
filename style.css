@@ -34,16 +34,19 @@
 
 .navcontainer{
   display: none;
+  font-family: 'Lato', sans-serif;
   width: 100%;
   height: 50vh;
   position: absolute;
-  background-color: blue;
+  background-color: white;
 }
 
 .active{
   display: flex;
+  box-sizing: border-box;
+  padding-left: 30px;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: space-around;
 }
 
@@ -94,6 +97,10 @@
 }
 .greentext{
   color: #BDD436;
+}
+
+.powderblue{
+  color: #97A2A7;
 }
 
 .whitetext{
@@ -209,9 +216,9 @@
 .servicecontainer{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-content: space-around;
-  height: 125vh;
+  align-items: space-around;
 }
 
 .service{
@@ -255,17 +262,28 @@
   width: 100%;
 }
 
+.calluscontainer{
+  display: inline-block;
+  width: 320px;
+}
+
 .emailcontainer{
   display: flex;
   flex-wrap: wrap;
   height: 244px;
+  justify-content: center;
   align-content: space-around;
+  /*align-items: center;*/
 }
 
 .bluebg{
   background-color: #40666D;
 }
 
-.left{
-  text-align: left;
+.copyrightcontainer{
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
 }
