@@ -5,11 +5,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.messagebox{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  background-color: #BDD436;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
 
 .menubar{
   display: flex;
   width: 85%;
-  height: 11vh;
+  height: 10vh;
 
   margin: 0 auto;
   justify-content: space-between;
@@ -36,7 +51,7 @@
   display: none;
   font-family: 'Lato', sans-serif;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   position: absolute;
   background-color: white;
 }
@@ -127,7 +142,7 @@
   margin: 0 auto;
   background-color: #BDD436;
   height: 48px;
-  min-width: 330px;
+  width: 90%;
   max-width: 360px;
   border-radius: 25px;
   text-align: center;
@@ -145,15 +160,16 @@
 
 .introcontainer{
   display: flex;
-  height: 400px;
+  height: 50vh;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
 .introcontainer>p{
-  text-align: center;
-  font-size: 1.3rem;
+  width: 90%;
+  text-align: justify;
+  font-size: 1.2rem;
 }
 
 .graytext{
@@ -175,11 +191,16 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 500px;
-  max-width: 380px;
+  height: 50vh;
 }
 
-.reasoncontainer .reasontext, .servicetitle, .answertext, .calltext{
+.reasontext{
+  width: 90%;
+  text-align: justify;
+  max-width: 425px;
+}
+
+.servicetitle, .answertext, .calltext{
   font-size: 1.3rem;
   text-align: center;
 }
@@ -191,7 +212,7 @@
 
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .arrowbox .arrowtext{
@@ -203,14 +224,11 @@
 }
 
 .questioncontainer{
-  box-sizing:border-box;
-  height: 30vh;
-  padding-top: 6vh;
-}
-
-.questioncontainer>p{
-  width: 310px;
-  margin: 3vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
 }
 
 .servicecontainer{
@@ -222,24 +240,26 @@
 }
 
 .service{
+  flex-grow: 1;
+  max-width: 90%;
+  margin-top: 20px;
   display: inline-block;
-  width: 310px;
   box-sizing: border-box;
-  padding: 30px 20px 30px 20px;
+  padding: 30px 0px 30px 0px;
 }
 
 .bluetext{
   color: #40666D;
 }
 
-.contactcontainer>a{
-  display: block;
-  width: 325px;
-}
-
 .contactcontainer{
-  padding-top: 5vh;
-  margin: 0 auto;
+  display: flex;
+
+  height: 90px;
+
+  justify-content: center;
+  align-items: center;
+
 }
 
 .worktitle{
@@ -256,24 +276,32 @@
 
 .imgcontainer{
   font-size: 0;
+  flex-shrink: 1;
+  max-width: 768px;
 }
 
 .workphoto{
   width: 100%;
 }
 
-.calluscontainer{
-  display: inline-block;
-  width: 320px;
-}
-
 .emailcontainer{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   height: 244px;
-  justify-content: center;
-  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
   /*align-items: center;*/
+}
+
+.calluscontainer{
+  width: 90%;
+}
+
+.greenline{
+  margin-top: 20px;
+  background-color: #BDD436;
+  height: 4px;
+  width: 47px;
 }
 
 .bluebg{
