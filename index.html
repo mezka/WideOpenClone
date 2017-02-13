@@ -2,46 +2,47 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta charset="utf-8">
     <title>Wide Open Tech</title>
     <link rel="icon" href="./img/wot.png">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-
     <main class="mainwrapper">
         <div class="messagebox"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Leave a message</div>
-        <header class="header">
-            <div class="menubar">
-                <div class="woticon"></div>
-                <i class="fa fa-bars fa-lg menuicon" aria-hidden="true"></i>
-            </div>
-            <ul class="navcontainer powderblue">
-                <li>SERVICES</li>
-                <li>COMPANY</li>
-                <li>PORTFOLIO</li>
-                <li>CARREERS</li>
-                <li>BLOG</li>
-            </ul>
-        </header>
         <section class="herocontainer">
-
-            <div class="cont">
-                <h1 class="title maintitle whitetext">YOUR DIGITAL<span class="workshop spacing">WORKSHOP</span></h1>
-                <div class="subtitlecontainer">
-                    <div class="whitebox"></div>
-                    <h2 class="title subtitle whitetext">Building Bussiness <span class="block"><span class="orangetext">Solutions</span> &amp; Bright <span class="greentext">Ideas</span></span></h2>
-                    <div class="whitebox"></div>
+          <header class="header">
+              <div class="menubar">
+                  <div class="woticon"></div>
+                  <i id="menuicon" class="fa fa-bars fa-lg menuicon" aria-hidden="true"></i>
+              </div>
+              <ul class="navcontainer powderblue">
+                  <a class="links" href="#"><li>SERVICES</li></a>
+                  <a class="links" href="#"><li>COMPANY</li></a>
+                  <a class="links" href="#"><li>PORTFOLIO</li></a>
+                  <a class="links" href="#"><li>CARREERS</li></a>
+                  <a class="links" href="#"><li>BLOG</li></a>
+              </ul>
+          </header>
+                <div class="hero-content-wrapper">
+                    <h1 class="title maintitle whitetext">YOUR DIGITAL<span class="workshop spacing">WORKSHOP</span></h1>
+                    <div class="subtitlecontainer">
+                        <div class="whitebox"></div>
+                        <h2 class="title subtitle whitetext">Building Bussiness <span class="block"><span class="orangetext">Solutions</span> &amp; Bright <span class="greentext">Ideas</span></span></h2>
+                        <div class="whitebox"></div>
+                    </div>
                 </div>
-            </div>
-            <a class="button whitetext">
-                <div class="learn bold spacing">Learn More</div>
-            </a>
+                <a class="button whitetext">
+                    <div class="learn bold spacing" style="color: white;">Learn More</div>
+                </a>
+
         </section>
 
         <article class="mainbody">
@@ -92,25 +93,29 @@
                 <p class="answertext bluetext">Here are just a few of the ways Wide Open can help you and your business</p>
             </div>
             <article class="servicecontainer smokebg">
-                <div class="service whitebg">
-                    <h3 class="servicetitle bluetext">Repair or modify existing software</h3>
+                <div class="servicecolumn">
+                    <div class="service whitebg">
+                        <h3 class="servicetitle bluetext">Repair or modify existing software</h3>
+                    </div>
+                    <div class="service whitebg">
+                        <h3 class="servicetitle bluetext">Develop a mobile app with real revenue potential</h3>
+                        <p class="graytext">Make an impact on any device
+                        </p>
+                    </div>
+                    <div class="service whitebg">
+                        <h3 class="servicetitle bluetext">Build functional prototypes for entrepreneurs</h3>
+                        <p class="graytext">Have a digital idea? We turn it into something you can show investors.</p>
+                    </div>
                 </div>
-                <div class="service whitebg">
-                    <h3 class="servicetitle bluetext">Develop a mobile app with real revenue potential</h3>
-                    <p class="graytext">Make an impact on any device
-                    </p>
-                </div>
-                <div class="service whitebg">
-                    <h3 class="servicetitle bluetext">Build functional prototypes for entrepreneurs</h3>
-                    <p class="graytext">Have a digital idea? We turn it into something you can show investors.</p>
-                </div>
-                <div class="service whitebg">
-                    <h3 class="servicetitle bluetext">Be your multi-talented technology department</h3>
-                    <p class="graytext">Rely on us for consistent management and maintenance of the digital side of your business.</p>
-                </div>
-                <div class="service whitebg bluetext">
-                    <h3 class="servicetitle bluetext">Make eCommerce work for you and your clients</h3>
-                    <p class="graytext">Customized functionality tailored to your business</p>
+                <div class="servicecolumn">
+                    <div class="service whitebg">
+                        <h3 class="servicetitle bluetext">Be your multi-talented technology department</h3>
+                        <p class="graytext">Rely on us for consistent management and maintenance of the digital side of your business.</p>
+                    </div>
+                    <div class="service whitebg bluetext">
+                        <h3 class="servicetitle bluetext">Make eCommerce work for you and your clients</h3>
+                        <p class="graytext">Customized functionality tailored to your business</p>
+                    </div>
                 </div>
             </article>
             <div class="contactcontainer smokebg"><a href="#" class="button whitetext">Contact Us</a></div>
@@ -140,11 +145,28 @@
         </section>
         <section class="emailcontainer bluebg">
             <div class="calluscontainer bigtext whitetext left">
-              <p>Let’s Talk About How Wide Open Tech Can Help Your Business</p>
-              <div class="greenline"></div>
+                <p>Let’s Talk About How Wide Open Tech Can Help Your Business</p>
+                <div class="greenline"></div>
             </div>
             <a href="" class="button whitetext">Email Us</a>
         </section>
+        <section class="locationcontainer">
+            <div class="adressimg" id="adressimg1">
+                <div class="addresscontainer">
+                    <h3>Wilmington</h3>
+                    <p>1409 Audubon Blvd Suite B4<br> Wilmington, NC 28403<br> 866-465-6188
+                        <br></p>
+                </div>
+            </div>
+            <div class="adressimg" id="adressimg2">
+                <div class="addresscontainer">
+                    <h3>Asheville</h3>
+                    <p>56 Ravenscroft Dr<br> Asheville, NC 28801<br> 866-465-6188
+                        <br></p>
+                </div>
+            </div>
+        </section>
+
         <footer class="copyrightcontainer smokebg">
             <p class="copyright graytext ">&#169; 2017 Wide Open Technologies</p>
         </footer>

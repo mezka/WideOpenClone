@@ -1,9 +1,21 @@
 .mainwrapper{
+
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
+
+a{
+  text-decoration: none;
+}
+
+
+li>a{
+    color: #6A787C;
+}
+
 
 .messagebox{
   position: fixed;
@@ -18,18 +30,14 @@
   background-color: #BDD436;
   border-radius: 4px;
   font-size: 0.8em;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
 }
 
-
 .menubar{
+  width: calc(100% - 60px);
   display: flex;
-  width: 85%;
-  height: 10vh;
-
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
 }
 
 .woticon{
@@ -44,16 +52,34 @@
 }
 
 .header{
-  position: relative;
+  position: fixed;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  --header-height: 50px;
+
+  height: var(--header-height);
 }
 
 .navcontainer{
-  display: none;
-  font-family: 'Lato', sans-serif;
-  width: 100%;
-  height: 40vh;
   position: absolute;
+  top: var(--header-height);
+  display: flex;
+  width: 100%;
+  height: 45vh;
+  box-sizing: border-box;
+  padding-left: 30px;
+
+  font-family: 'Lato', sans-serif;
   background-color: white;
+
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+
 }
 
 .active{
@@ -66,15 +92,21 @@
 }
 
 .herocontainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
   width: 100%;
-  height: 40vh;
-
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+  align-content: space-around;
   background: url('./img/wot-masthead-dark.jpg');
   background-size: cover;
+}
+
+
+.hero-content-wrapper{
+  width: 100%;
+  margin-top: 50px;
 }
 
 .title{
@@ -139,7 +171,6 @@
 
 .button{
   display: inline-block;
-  margin: 0 auto;
   background-color: #BDD436;
   height: 48px;
   width: 90%;
@@ -155,7 +186,7 @@
 }
 
 .whitebg{
-  background-color: white;
+  background-color: white !important;
 }
 
 .introcontainer{
@@ -168,8 +199,9 @@
 
 .introcontainer>p{
   width: 90%;
+  max-width: 900px;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .graytext{
@@ -185,6 +217,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 
 .reasoncontainer{
   display: flex;
@@ -234,19 +267,26 @@
 .servicecontainer{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  align-items: space-around;
+  justify-content: center;
+}
+
+.servicecolumn{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .service{
-  flex-grow: 1;
-  max-width: 90%;
-  margin-top: 20px;
   display: inline-block;
   box-sizing: border-box;
   padding: 30px 0px 30px 0px;
+  width: 90%;
+  flex-grow: 1;
+  text-align: center;
+  margin: 10px 0 0 0;
 }
+
 
 .bluetext{
   color: #40666D;
@@ -277,7 +317,9 @@
 .imgcontainer{
   font-size: 0;
   flex-shrink: 1;
+  flex-grow: 1;
   max-width: 768px;
+  margin: 0px 0px -1px 0px;
 }
 
 .workphoto{
@@ -308,10 +350,171 @@
   background-color: #40666D;
 }
 
+
+.locationcontainer{
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.adressimg{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 50%;
+  height: 40vh;
+  background-size: cover;
+
+
+}
+
+#adressimg1{
+  background-image: url("./img/wilmington.jpg");
+}
+#adressimg2{
+  background-image: url("./img/ash.jpg");
+}
+
+.addresscontainer{
+  font-size: 16px;
+  color: white;
+  background-color: #141E21;
+  opacity: 0.85;
+  padding: 25px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  width: 70%;
+}
+
+.addresscontainer>h3{
+  color: #BDD436;
+  font-size: 30px;
+}
+
+
 .copyrightcontainer{
   height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.8em;
+}
+
+/**************************** media query *************************************/
+
+@media(min-width:768px){
+
+
+  .imgcontainer{
+    max-width: 50vw;
+  }
+
+  .workshop{
+    display: block;
+    font-size: 150px;
+    line-height: 1.2;
+  }
+
+  .locationcontainer{
+    display: flex;
+  }
+
+  .navcontainer{
+    position: absolute;
+    top: var(--header-height);
+    display: flex;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0px 15vw 0px 15vw;
+
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .woticon, .woticon-dark{
+    height: 31px;
+    width: 160px;
+
+    background-image: url('./img/wot-logo-dark.svg');
+    background-size: cover;
+  }
+}
+
+
+
+
+
+/**************************** media query *************************************/
+
+@media(min-width:1024px){
+
+  .imgcontainer{
+    max-width: 33vw;
+  }
+
+  li>a{
+    color: white;
+  }
+
+  a:hover{
+    border-bottom: 3px solid #BDD436;
+  }
+
+
+  .menubar{
+    width: auto;
+    display: inline-block;
+  }
+
+  .navcontainer{
+    position: static;
+    display: inline-flex;
+    width: 40vw;
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-between;
+
+
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    color: white;
+  }
+
+  .navcontainer>li:hover{
+    border-bottom: 3px solid #BDD436;
+  }
+
+  .header{
+    position: fixed;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    --header-height: 50px;
+
+    height: var(--header-height);
+  }
+
+  .woticon{
+    height: 39px;
+    width: 200px;
+
+
+    background-image: url('img/title_wideopentech.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
 }
